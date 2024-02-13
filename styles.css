@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --color1: white; 
+    --color2: #e5e5e5; 
+    font-family: 'Open Sans', sans-serif;
+}
+
+header, #home {
+	background: #ffc107;
+	color: var(--color1);
+    
+}
+
+/* header */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+header img {
+    max-width: 200px;
+    width: 200px;
+    
+}
+
+header .topnav {
+    margin-top: 15px;
+}
+  
+header .topnav .links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style-type: none;
+    align-items: center;
+}
+
+header .topnav .links a:hover, footer p a:hover{
+    color: black;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--color1);
+    font-weight: bold;
+}
+
+#nav-button {
+    width: 50px;
+    height: 35px;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    color: var(--color1);
+    border: 1px solid var(--color1);
+    transition: 1s;
+}
+
+#nav-button:hover {
+    background-color: var(--color1);
+    color: black;
+}
+
+header .topnav .toggle_btn {
+    font-size: 2rem;
+    display: none;
+}
+
+header .dropdown_menu {
+    display: none;
+    position: absolute;
+    top: 74px;
+    width: 300px;
+    background: rgba(194, 73, 73, 0.1);
+    backdrop-filter: blur(15px);
+    text-decoration: none;
+    overflow: hidden;
+    border-top: 1px solid var(--color1);
+}
+
+header .dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* main */
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+main #home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 40px;
+    height: 514px;
+}
+
+main #home h1 {
+    font-weight: 100;
+    font-size: 50px;
+}
+
+main #home div:nth-child(1) {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+}
+
+
+main #resources {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+	border-bottom: 2px solid var(--color2);
+    gap: 50px;
+}
+
+main #resources .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+   
+}
+
+main #resources .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+main #resources .text {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+main #resources img {
+    width: 25%; 
+}
+
+main #advantages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 60px 0px;
+    border-bottom: 2px solid var(--color2);
+    
+}
+
+main #advantages .advantages-content {
+    width: 500px;
+}
+main #advantages img {
+    width: 60%;
+}
+
+/* footer */ 
+footer {
+    padding: 20px 0px;
+    text-align: center;
+}
+footer p a {
+	margin: 5px 15px;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 850px) {
+    main #home #image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    header .topnav .links {
+        display: none;
+    }
+
+    header .topnav .toggle_btn {
+        margin-top: -8px;
+        display: block;
+    }
+    
+    header .dropdown_menu {
+        display: block;
+        width: 100%;
+    }
+  }
+
+
+  @media screen and (max-width: 600px) {
+    
+    main #advantages {
+        flex-direction: column; 
+        align-items: center;  
+        justify-content: center;
+    }
+
+    main #advantages .advantages-content {
+        width: 400px;
+    }
+}
+ 
+
+@media screen and (max-width: 400px) {
+    main #resources .content {
+        display: flex;
+        flex-direction: column-reverse;
+       
+    }
+
+    main #resources .row {
+        flex-direction: column-reverse; 
+    }
+    
+    main #home h1 {
+        font-size: 34px;
+
+    }
+
+    main #home1 {
+            padding: 20px;
+        };
+
+    main #advantages {
+            flex-direction: column; 
+            align-items: center; 
+    }
+    
+    main #advantages .advantages-content {
+            width: 80%; 
+            text-align: center; 
+    }
+    
+    main #advantages img {
+            width: 50%;
+            margin-bottom: 10px;
+    }
+    
+    main #advantages .advantages-content h4,
+    main #advantages .advantages-content p {
+            width: 100%; 
+    }
+    
+    footer p {
+            flex-wrap: wrap;
+            justify-content: center;
+    }
+}
+ 
+@media screen and (max-width: 300px) {
+    main #home h1 {
+        font-size: 30px;
+
+    }
+
+}

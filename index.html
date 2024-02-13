@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Finans</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <img src="assets/imgs/logo.png" alt="image logo">
+
+        <nav class="topnav">
+            <ul class="links">
+                <li><a href="">Home</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#advantages">Advantages</a></li>
+                <li><a href="pages/login.php"><button type='button' id="nav-button">Enter</button></a></li>
+            </ul> 
+
+            <!--button dropdown-->
+            <div class="toggle_btn" id="toggle_btn">
+                <a href="javascript:void(0);" id="icon">
+                    <i class="fa fa-bars"></i>
+                </a>    
+            </div>   
+        </nav>
+
+        <!--header dropdown-->
+        <div class="dropdown_menu" id="dropdown_menu">
+            <ul class="links">
+                <li><a href="">Home</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#advantages">Advantages</a></li>
+                <li><a href="pages/login.php"><button type='button' id="nav-button">Enter</button></a></li>
+            </ul> 
+        </div>  
+    </header>
+
+    <main>
+       <section id="home">
+            <div id="home1">
+                <h1>Your accounts, <br/> discomplicated</h1>
+                <p>Used by 1 million people, Finans is an online tool who will make your financial life easier.</p>
+            </div>
+
+            <div>
+                <img src="assets/imgs/capa-mulher.png" alt="woman photo" id="image">
+            </div>    
+       </section>
+
+       <section id="resources">
+            <div class="row">
+                <div class="content">
+                    <div class="text">
+                        <h2>Know more where going your money</h2> 
+                        <p>With finans, you categorize all your launches. with simply graphics, you know where your money comes from and where goes your money.</p>
+                    </div>
+                    <img src="assets/imgs/saiba.png" alt="photo" class="image">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="content">
+                    <img src="assets/imgs/juros.png" alt="photo">
+                    <div class="text">
+                        <h2>Stop spending money and save it</h2>
+                        <p>Mantain the accounts is always a problem? Finans advice you: receive alert accounts to pay and receive!</p>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+       <section id="advantages">
+            <div class="advantages-content">
+                <img src="assets/imgs/facil.png">
+                <div>
+                    <h4>Easy to use</h4>
+                    <p>Finans goes beyond the basic e permits you make incredible controls, essencial for your financies. Simple as it have to be!</p>
+                </div>
+            </div>
+
+            <div class="advantages-content">
+                <img src="assets/imgs/economize.png">
+                <div>
+                    <h4>Save your time</h4>
+                    <p>Time is money! in seconds, you have everything under control and enjoy your time who really matters for you!</p>
+                </div>
+            </div>
+
+            <div class="advantages-content">
+                <img src="assets/imgs/suporte.png">
+                <div>
+                    <h4>Supports</h4>
+                    <p>Doubts? Questions? Our support helps you! We here to resolve your problems and making your life easier</p>
+                </div>
+            </div> 
+       </section>
+    </main>
+    
+    <footer>
+        <p>
+            <a href="#home">Home</a>
+            <a href="#resources">Resources</a>
+            <a href="#advantages">Advantages</a>
+        </p>
+
+        <p>All Rights Reserved</p>
+    </footer>
+
+    <script src="js/modal-hide.js"></script>
+</body>
+</html>

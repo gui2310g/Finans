@@ -1,0 +1,17 @@
+{
+    "name": "gui/finans",
+    "autoload": {
+        "psr-4": {
+            "Gui\\Finans\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "gui2310g",
+            "email": "fontesguilherme57@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
